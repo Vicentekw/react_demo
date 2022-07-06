@@ -1,17 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+/*
+ * @Description: 
+ * @Version: 1.0
+ * @Autor: Vicentekw
+ * @Date: 2021-12-02 22:22:19
+ * @LastEditors: Vicentekw
+ * @LastEditTime: 2021-12-16 22:57:12
+ */
+
+//1.引入核心模块
+import React from "react";
+import ReactDOM  from "react-dom";
+import App from "./App7";
+
+//2.把对应的内容渲染到id为root的标签上
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    <App />,
+    document.getElementById("root")
+)
