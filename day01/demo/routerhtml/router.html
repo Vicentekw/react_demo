@@ -1,0 +1,40 @@
+<!--
+ * @Description: 
+ * @Author: huacong
+ * @Date: 2021-12-19 16:11:21
+ * @LastEditTime: 2021-12-19 16:26:20
+ * @LastEditors: huacong
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#/index">首页</a>
+        </li>
+        <li>
+            <a href="#/list">列表页</a>
+        </li>
+    </ul>
+    <div id="routerView"></div>
+
+    <script>
+        let routes = {
+            '#/index':"./index.html",
+            '#/list':"./list.html",
+        }
+
+        window.addEventListener("hashchange",()=>{
+            console.log(location.hash);
+            $("#routerView").load(routes[location.hash])
+        })
+    </script>
+</body>
+</html>
